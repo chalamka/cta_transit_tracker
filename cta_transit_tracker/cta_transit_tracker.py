@@ -13,9 +13,9 @@ class CTATransitTracker():
 
 
 class BusTracker(CTATransitTracker):
-    def __init__(self, session, loop, api_key, format='json', locale='en'):
+    def __init__(self, session, loop, api_key, response_format='json', locale='en'):
         self._api_key = api_key
-        self._format = format
+        self._format = response_format
         self._locale = locale
 
         super().__init__(session, loop)
